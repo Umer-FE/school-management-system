@@ -29,6 +29,10 @@
   padding: 120px 60px;
 }
 
+.custom_sidebar_btn {
+  padding: 7px 11px;
+}
+
 .intro {
   display: flex;
   flex-direction: column;

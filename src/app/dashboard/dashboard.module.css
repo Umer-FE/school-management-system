@@ -1,0 +1,32 @@
+.custom_sidebar_btn {
+  padding: 7px 11px;
+}
+
+.dashboardContainer {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.tableCard {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.tableCard:hover {
+  transform: translateY(-5px);
+}
+
+.actionBtn {
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,66 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+.sidebarHidden {
+  transform: translateX(-260px);
+}
+
+.navHover:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.dropdownToggle {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dropdownIcon {
+  margin-left: auto;
+  transition: transform 0.2s;
+  font-size: 0.8rem;
+}
+
+.dropdownIconOpen {
+  transform: rotate(180deg);
+}
+
+.subMenu {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin-top: 5px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  margin-left: 1.25rem;
+}
+
+.subNavLink {
+  font-size: 0.82rem;
+  opacity: 0.8;
+  transition: all 0.2s;
+}
+
+.subNavLink:hover {
+  opacity: 1;
+  color: var(--primary) !important;
+}
+
+.activeSubLink {
+  opacity: 1;
+  color: var(--primary-light) !important;
+  font-weight: 600;
+}
